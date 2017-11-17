@@ -8,9 +8,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CurrencyConverter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A small utility to convert currency.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Sajen Jose")]
 [assembly: AssemblyProduct("CurrencyConverter")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]

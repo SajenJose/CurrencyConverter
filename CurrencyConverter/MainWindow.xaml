@@ -12,7 +12,7 @@
                 <MenuItem   Header="E_xit" IsCheckable="False" Background="#FF333337" Foreground="White" Click="menuItemExit_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="_Help">
-                <MenuItem Header="_About" IsCheckable="False"></MenuItem>
+                <MenuItem Header="_About" IsCheckable="False" Background="#FF333337" Foreground="White" Click="menuItemAbout_Click"></MenuItem>
             </MenuItem>
         </Menu>
         <GroupBox x:Name="grpBox" Header="Currency Selector" HorizontalAlignment="Left" Height="94" Margin="10,27,0,0" VerticalAlignment="Top" Width="489" Foreground="White">
@@ -21,29 +21,29 @@
         <TextBox x:Name="txtBoxAmount" HorizontalAlignment="Left" Height="23" Margin="197,53,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="171"/>
         <Label x:Name="lblSourceCurrency" Content="Select the Source Currency    : " HorizontalAlignment="Left" Margin="26,83,0,0" VerticalAlignment="Top" Foreground="White"/>
         <ComboBox x:Name="cmbBoxSrcCurrency" HorizontalAlignment="Left" Margin="197,87,0,0" VerticalAlignment="Top" Width="171" Initialized="Window_Loaded"/>
-        <Button x:Name="btnConvert" Content="C_onvert" HorizontalAlignment="Left" Margin="395,56,0,0" VerticalAlignment="Top" Width="75" Click="buttonConvert_Click"/>
-        <ProgressBar HorizontalAlignment="Left" Height="22" Margin="395,87,0,0" VerticalAlignment="Top" Width="75" Minimum="0" Maximum="100" Name="pbStatus"/>
+        <Button x:Name="btnConvert" Content="C_onvert" HorizontalAlignment="Left" Margin="401,67,0,0" VerticalAlignment="Top" Width="75" Click="buttonConvert_Click" Height="29"/>
         <Separator x:Name="separator" HorizontalAlignment="Left" Height="12" Margin="10,126,0,0" VerticalAlignment="Top" Width="489"/>
         <GroupBox x:Name="grpBoxOutput" Header="Converted Output" HorizontalAlignment="Left" Height="136" Margin="10,138,0,0" VerticalAlignment="Top" Width="489" Foreground="White">
             <Label x:Name="lblINRName" Content="Indian Rupees (INR) :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
         </GroupBox>
-        <Label x:Name="lblINRValue" Content="INR" HorizontalAlignment="Left" Margin="141,166,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
+        <Label x:Name="lblINRValue" Content="INR" HorizontalAlignment="Left" Margin="141,166,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
         <Label x:Name="lblUSDName" Content="US Dollar (USD)       :" HorizontalAlignment="Left" Margin="26,190,0,0" VerticalAlignment="Top" Width="122" Foreground="White"/>
-        <Label x:Name="lblUSDValue" Content="USD" HorizontalAlignment="Left" Margin="141,192,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
+        <Label x:Name="lblUSDValue" Content="USD" HorizontalAlignment="Left" Margin="141,192,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
         <Label x:Name="lblGBPName" Content="British Pound (GBP) :" HorizontalAlignment="Left" Margin="26,214,0,0" VerticalAlignment="Top" Width="122" Foreground="White"/>
-        <Label x:Name="lblGBPValue" Content="GBP" HorizontalAlignment="Left" Margin="141,216,0,0" VerticalAlignment="Top" Width="60" Foreground="Wheat" />
+        <Label x:Name="lblGBPValue" Content="GBP" HorizontalAlignment="Left" Margin="141,216,0,0" VerticalAlignment="Top" Width="100" Foreground="Wheat" />
         <Label x:Name="lblEURName" Content="EU Euro (EUR)         :" HorizontalAlignment="Left" Margin="26,240,0,0" VerticalAlignment="Top" Width="122" Foreground="White"/>
-        <Label x:Name="lblEURValue" Content="EUR" HorizontalAlignment="Left" Margin="141,242,0,0" VerticalAlignment="Top" Width="60" Foreground="Wheat"/>
-        <Label x:Name="lblSGDName" Content="Singapore Dollar (SGD) :" HorizontalAlignment="Left" Margin="278,166,0,0" VerticalAlignment="Top" Foreground="White"/>
-        <Label x:Name="lblAUDName" Content="Australian Dollar (AUD) :" HorizontalAlignment="Left" Margin="278,192,0,0" VerticalAlignment="Top" Width="142" Foreground="White"/>
-        <Label x:Name="lblNZDName" Content="NZ Dollar (NZD)            :" HorizontalAlignment="Left" Margin="278,216,0,0" VerticalAlignment="Top" Width="138" Foreground="White"/>
-        <Label x:Name="lblJPYName" Content="Japanese Yen (JPY)        :" HorizontalAlignment="Left" Margin="278,241,0,0" VerticalAlignment="Top" Width="138" Foreground="White"/>
-        <Label x:Name="lblSGDValue" Content="SGD" HorizontalAlignment="Left" Margin="421,166,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
-        <Label x:Name="lblAUDValue" Content="AUD" HorizontalAlignment="Left" Margin="421,192,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
-        <Label x:Name="lblNZDValue" Content="NZD" HorizontalAlignment="Left" Margin="420,218,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
-        <Label x:Name="lblJPYValue" Content="JPY" HorizontalAlignment="Left" Margin="421,240,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="60"/>
-        <StatusBar x:Name="stsBarMainFrame" HorizontalAlignment="Left" Height="30" Margin="0,291,0,0" VerticalAlignment="Top" Width="520" Background="#FF5D5D5E" Foreground="Yellow">
-            <TextBlock Name="statusBarText" Foreground="WhiteSmoke"/>
+        <Label x:Name="lblEURValue" Content="EUR" HorizontalAlignment="Left" Margin="141,242,0,0" VerticalAlignment="Top" Width="100" Foreground="Wheat"/>
+        <Label x:Name="lblSGDName" Content="Singapore Dollar (SGD) :" HorizontalAlignment="Left" Margin="250,166,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lblAUDName" Content="Australian Dollar (AUD) :" HorizontalAlignment="Left" Margin="251,192,0,0" VerticalAlignment="Top" Width="142" Foreground="White"/>
+        <Label x:Name="lblNZDName" Content="NZ Dollar (NZD)            :" HorizontalAlignment="Left" Margin="251,216,0,0" VerticalAlignment="Top" Width="138" Foreground="White"/>
+        <Label x:Name="lblJPYName" Content="Japanese Yen (JPY)        :" HorizontalAlignment="Left" Margin="251,241,0,0" VerticalAlignment="Top" Width="138" Foreground="White"/>
+        <Label x:Name="lblSGDValue" Content="SGD" HorizontalAlignment="Left" Margin="391,166,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
+        <Label x:Name="lblAUDValue" Content="AUD" HorizontalAlignment="Left" Margin="391,192,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
+        <Label x:Name="lblNZDValue" Content="NZD" HorizontalAlignment="Left" Margin="390,218,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
+        <Label x:Name="lblJPYValue" Content="JPY" HorizontalAlignment="Left" Margin="391,240,0,0" VerticalAlignment="Top" Foreground="Wheat" Width="100"/>
+        <StatusBar x:Name="stsBarMainFrame" HorizontalAlignment="Left" Height="31" Margin="0,281,0,0" VerticalAlignment="Top" Width="520" Background="#FF5D5D5E" Foreground="Yellow">
+            <TextBlock Name="statusBarText" Foreground="WhiteSmoke" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <ProgressBar Foreground="Yellow" HorizontalAlignment="Right" Height="22" VerticalAlignment="Top" Width="449" Minimum="0" Maximum="100" x:Name="pbStatus" />
         </StatusBar>
 
 

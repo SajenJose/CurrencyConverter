@@ -1,0 +1,29 @@
+﻿<Window x:Class="CurrencyConverter.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConverter"
+        mc:Ignorable="d"
+        Title="About: Currency Converter" Height="203.733" Width="328.456" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid Background="#FF333337">
+        <Image HorizontalAlignment="Left" Height="144" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Source="Resources/About.jpg"/>
+        <Label x:Name="lblAboutName" Content="Currency Converter" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Width="188" Foreground="Yellow"/>
+        <Label x:Name="lblAboutVersion" Content="Version: 1.0.0.0" HorizontalAlignment="Left" Margin="110,36,0,0" VerticalAlignment="Top" Width="188" Foreground="White"/>
+        <Label x:Name="lblAboutAuthor" Content="Author: Sajen Jose" HorizontalAlignment="Left" Margin="110,62,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lblAboutFeedback" Content="Feedback: theKludgeBin@gmail.com" HorizontalAlignment="Left" Margin="110,88,0,0" VerticalAlignment="Top" Width="203" Foreground="White"/>
+        <Button x:Name="btnAboutOK" Content="OK" HorizontalAlignment="Left" Height="23" Margin="177,131,0,0" VerticalAlignment="Top" Width="73" Click="buttonAboutOK_Click"/>
+        <Separator HorizontalAlignment="Left" Height="22" Margin="26,68,0,0" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.151"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+
+
+    </Grid>
+</Window>
